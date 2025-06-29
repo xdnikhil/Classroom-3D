@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Classroom | A-frame</title>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/aframe-physics-system@4.0.1/dist/aframe-physics-system.min.js"></script>
+  
 </head>
 <body>
+   <a-scene>
+
+    <!--Sky-->
+        <a-sky color="#b9eeff"></a-sky>
     
+    <!--Base-->
+        <a-plane position="-10 0 -10" rotation="-90 0 0" width="20" height="20" color="#50ff8d" static-body></a-plane>
+        <a-plane position="10 0 -10" rotation="-90 0 0" width="20" height="20" color="#50ff8d" static-body></a-plane>
+        <a-plane position="-10 0 10" rotation="-90 0 0" width="20" height="20" color="#50ff8d" static-body></a-plane>
+        <a-plane position="10 0 10" rotation="-90 0 0" width="20" height="20" color="#50ff8d" static-body></a-plane>
+
+    
+    <!--Camera controls-->
+        <a-entity id="entity" camera wasd-controls look-controls="pointerLockEnabled: true" position="10 2 10" dynamic-body></a-entity>
+   
+    <!--fencing-->    
+        <a-box position="0 0.75 -20.15" width="40" height="1.5" depth="0.3" color="#c86509" static-body></a-box>
+        <a-box position="0 0.75 20.15" width="40" height="1.5" depth="0.3" color="#c86509" static-body></a-box>
+        <a-box position="-20.15 0.75 0" width="0.3" height="1.5" depth="40" color="#c86509" static-body></a-box>
+        <a-box position="20.15 0.75 0" width="0.3" height="1.5" depth="40" color="#c86509" static-body></a-box>
+        
+   </a-scene> 
 </body>
 </html>
