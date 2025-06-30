@@ -7,7 +7,7 @@ A 3D classroom using A-frame. A-Frame is a library to help make this stuff MUCH 
 
 # Requirements
 ```
-* Visual studio code / IDE
++ Visual studio code / IDE
 * HTML/CSS
 * A-frame Library integration
 * Vercel/replit - for deployment
