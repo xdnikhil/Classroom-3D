@@ -5,9 +5,10 @@ A 3D classroom using A-frame. A-Frame is a library to help make this stuff MUCH 
 
 > [Link To Website](https://classroom-3-d.vercel.app)
 
+
 # Requirements
 ```
-+ Visual studio code / IDE
+* Visual studio code / IDE
 * HTML/CSS
 * A-frame Library integration
 * Vercel/replit - for deployment
